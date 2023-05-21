@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    width: 1307px;
+    height: 600px;
+}
+
+main .conteiner-sedan,
+main .conteiner-suv,
+main .conteiner-luxury{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    font-weight: 400;
+    padding: 30px;
+    width: 279px;
+    height: 455px;
+}
+
+main .conteiner-sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+
+main .conteiner-suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+main .conteiner-luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+main .conteiner-sedan h2,
+main .conteiner-suv h2,
+main .conteiner-luxury h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+main .conteiner-sedan p,
+main .conteiner-suv p,
+main .conteiner-luxury p{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    color:hsla(0, 0%, 100%, 0.75);
+    height: 108px;
+    width: 194px;
+}
+
+main .conteiner-sedan a,
+main .conteiner-suv a,
+main .conteiner-luxury a{
+    width: 131px;
+    height: 44px;
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+main .conteiner-sedan a{
+    color: hsl(31, 77%, 52%);
+   
+}
+main .conteiner-suv a{
+    color: hsl(184, 100%, 22%);
+}
+main .conteiner-luxury a{
+    color: hsl(179, 100%, 13%);
+}
+
+main .conteiner-sedan a:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+
+main .conteiner-suv a:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+main .conteiner-luxury a:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+footer{
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) and (max-width: 799px){
+    body{
+        height: 100%;
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    main{
+        height: 90%;
+        width: 90%;
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+
+    footer{
+        padding: 20px 0px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 599px){
+
+    body{
+        min-height: 100%;
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    main{
+        padding: 50px 0px;
+        height: 100%;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    main .conteiner-sedan,
+    main .conteiner-suv,
+    main .conteiner-luxury{
+        width: 80vw;
+    }
+    
+    footer{
+        padding: 20px 0px;
+    }
+}

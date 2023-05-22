@@ -53,6 +53,7 @@ main .conteiner-luxury h2{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
 }
 
 main .conteiner-sedan p,
